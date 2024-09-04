@@ -66,7 +66,7 @@ export const Header = ({
           </li>
         ) : null}
         <li>
-          <LinkButton href="/">Sign In</LinkButton>
+          <LinkButton href="http://127.0.0.1:5173/">Sign In</LinkButton>
         </li>
       </ul>
     </nav>

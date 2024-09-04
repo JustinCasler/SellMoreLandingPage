@@ -10,7 +10,6 @@ const Background = () => (
     className="absolute bottom-0 right-0 hidden pointer-events-none md:block"
     aria-hidden="true"
   >
-    <NewsletterSpheres />
   </div>
 );
 
@@ -21,11 +20,10 @@ export const Newsletter = () => {
         <Background />
         <div className="gap-6 text-center md:text-left col md:w-1/2 ">
           <h2 className="text-3xl font-bold text-gray-100">
-            Save your spot today
+            More Questions?
           </h2>
           <p className="text-lg text-light">
-            By joining our waitlist, you&apos;ll be the first to see our
-            product. We&apos;d love to learn from you along the way!
+            You can reach us here
           </p>
           <WaitlistForm id="newsletter-waitlist" />
         </div>

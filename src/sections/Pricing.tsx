@@ -90,8 +90,8 @@ export const Pricing = () => {
     <Section grayer className="text-center">
       {/* Header */}
       <div className="gap-2 mb-4 col">
-        <Title size="md">Pricing for Every Team</Title>
-        <Details>Choose the plan that fits your needs</Details>
+        <Title size="md">Invest In Your Company</Title>
+        <Details>For the price of a dinner</Details>
       </div>
       <p className="text-lg font-semibold mb-6">$10 off for the first 1000 customers</p>
       {/* Pricing Plans */}
