@@ -3,7 +3,7 @@ import { Section } from "../components/Section";
 import { Title } from "../components/Title";
 import { Details } from "../components/Details";
 import { Button } from "../components/Button";
-
+import { FRONTEND_URL } from "../constants";
 // Example SVG checkmark component
 const CheckmarkIcon = () => (
   <svg
@@ -103,7 +103,7 @@ export const Pricing = () => {
           price="$18"
           features={["Unlimited Popups", "Unlimited Websites", "Monitor Traffic", "Tech Support"]}
           ctaText="Get SellMore"
-          redirectUrl="http://127.0.0.1:5173/"
+          redirectUrl= { FRONTEND_URL }
         />
         {/* Pro Plan */}
         <PricingCard
@@ -112,7 +112,7 @@ export const Pricing = () => {
           price="$25"
           features={["Unlimited Popups", "Unlimited Websites", "Monitor Traffic", "Tech Support"]}
           ctaText="Get SellMore"
-          redirectUrl="http://127.0.0.1:5173/"
+          redirectUrl={ FRONTEND_URL }
           isPro={true}
         />
       </div>

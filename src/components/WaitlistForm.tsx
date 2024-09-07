@@ -47,12 +47,6 @@ export const WaitlistForm = (
           value={email}
           required
         />
-        <label
-          htmlFor={id}
-          className="absolute z-10 text-xs -top-2 left-4 text-light"
-        >
-          Your Email
-        </label>
         {/* Line beneath label to hide outline */}
         <div className="absolute top-0 w-[4.3rem] h-[2px] bg-strong left-3" />
         <Button type="submit">Waitlist</Button>

@@ -6,7 +6,7 @@ import { useEffectOnce, useEventListener } from "usehooks-ts";
 import { Button } from "../components/Button";
 import { LinkButton } from "../components/LinkButton";
 import { Moon, Sun } from "../svg/DarkModeIcons";
-
+import { FRONTEND_URL } from "../constants"
 // Built with Vivid (https://vivid.lol) ⚡️
 
 export const Header = ({
@@ -66,7 +66,7 @@ export const Header = ({
           </li>
         ) : null}
         <li>
-          <LinkButton href="http://127.0.0.1:5173/">Sign In</LinkButton>
+          <LinkButton href={ FRONTEND_URL} >Sign In</LinkButton>
         </li>
       </ul>
     </nav>
