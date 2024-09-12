@@ -4,6 +4,7 @@ import { Title } from "../components/Title";
 import { Details } from "../components/Details";
 import { Button } from "../components/Button";
 import { FRONTEND_URL } from "../constants";
+
 // Example SVG checkmark component
 const CheckmarkIcon = () => (
   <svg
@@ -22,7 +23,18 @@ const CheckmarkIcon = () => (
   </svg>
 );
 
-const PricingCard = ({
+// Define the props interface for the PricingCard component
+interface PricingCardProps {
+  title: string;
+  oldPrice: string;
+  price: string;
+  features: string[];
+  ctaText: string;
+  redirectUrl: string;
+  isPro?: boolean;
+}
+
+const PricingCard: React.FC<PricingCardProps> = ({
   title,
   oldPrice,
   price,
@@ -103,7 +115,7 @@ export const Pricing = () => {
           price="$18"
           features={["Unlimited Popups", "Unlimited Websites", "Monitor Traffic", "Tech Support"]}
           ctaText="Get SellMore"
-          redirectUrl= { FRONTEND_URL }
+          redirectUrl={FRONTEND_URL}
         />
         {/* Pro Plan */}
         <PricingCard
@@ -112,7 +124,7 @@ export const Pricing = () => {
           price="$25"
           features={["Unlimited Popups", "Unlimited Websites", "Monitor Traffic", "Tech Support"]}
           ctaText="Get SellMore"
-          redirectUrl={ FRONTEND_URL }
+          redirectUrl={FRONTEND_URL}
           isPro={true}
         />
       </div>
