@@ -7,14 +7,14 @@ export const Button = (
   props: DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
-  >
+  >,
 ) => (
   <button
     type="button"
     {...props}
     className={twMerge(
       "text-gray-50 font-bold bg-neon-blue rounded-lg hover:bg-primary-700 w-fit px-4 py-2",
-      props.className
+      props.className,
     )}
   />
 );

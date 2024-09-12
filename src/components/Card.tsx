@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 export const Card = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
     grayer?: boolean;
-  }
+  },
 ) => {
   const { grayer = false, ...divProps } = props;
 
@@ -17,7 +17,7 @@ export const Card = (
         `relative shadow-xl flex-1 border border-gray-300 rounded-lg dark:border-gray-600 ${
           grayer ? "bg-strong" : "bg-extra-strong"
         }`,
-        props.className
+        props.className,
       )}
     />
   );

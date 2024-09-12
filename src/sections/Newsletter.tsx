@@ -9,8 +9,7 @@ const Background = () => (
   <div
     className="absolute bottom-0 right-0 hidden pointer-events-none md:block"
     aria-hidden="true"
-  >
-  </div>
+  ></div>
 );
 
 export const Newsletter = () => {
@@ -19,12 +18,8 @@ export const Newsletter = () => {
       <Card className="w-full px-4 py-16 overflow-hidden sm:px-16">
         <Background />
         <div className="gap-6 text-center md:text-left col md:w-1/2 ">
-          <h2 className="text-3xl font-bold text-gray-100">
-            More Questions?
-          </h2>
-          <p className="text-lg text-light">
-            You can reach us here
-          </p>
+          <h2 className="text-3xl font-bold text-gray-100">More Questions?</h2>
+          <p className="text-lg text-light">You can reach us here</p>
           <WaitlistForm id="newsletter-waitlist" />
         </div>
       </Card>

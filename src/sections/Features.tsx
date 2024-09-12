@@ -8,7 +8,9 @@ import { Title } from "../components/Title";
 import Image from "next/image";
 
 const InlineSVG = () => (
-  <div className="w-32 h-32"> {/* Adjust width and height as needed */}
+  <div className="w-32 h-32">
+    {" "}
+    {/* Adjust width and height as needed */}
     <svg
       id="Layer_1"
       data-name="Layer 1"
@@ -31,15 +33,28 @@ const InlineSVG = () => (
         </style>
       </defs>
       <path className="cls-3 stroke-current" d="m4.01.13s-.96,1.52-1.92,5.66" />
-      <path className="cls-2 stroke-current" d="m1.07,11.74c-.56,4.39-.93,10.25-.79,17.96.15,8.26.94,38.89,29.69,39.32s27.75-38.46,12.8-33.18c-14.95,5.28-14.41,26.31,20.51,18.58,34.92-7.72,67.32-27.66,79.13-5.03s-15.86,32.67-31.33,32.5c-19.55-.22-31.76-26.61-45.49-15.02-9.93,8.38-2.36,15.19,2.01,22.7" />
-      <path className="cls-3 stroke-current" d="m68.98,92.27c.81,1.88,1.28,3.81,1.12,5.84" />
-      <polygon className="cls-1 fill-current" points="68.08 96.38 68.46 96.05 70.07 97.91 71.81 96.17 72.17 96.52 70.05 98.65 68.08 96.38" />
+      <path
+        className="cls-2 stroke-current"
+        d="m1.07,11.74c-.56,4.39-.93,10.25-.79,17.96.15,8.26.94,38.89,29.69,39.32s27.75-38.46,12.8-33.18c-14.95,5.28-14.41,26.31,20.51,18.58,34.92-7.72,67.32-27.66,79.13-5.03s-15.86,32.67-31.33,32.5c-19.55-.22-31.76-26.61-45.49-15.02-9.93,8.38-2.36,15.19,2.01,22.7"
+      />
+      <path
+        className="cls-3 stroke-current"
+        d="m68.98,92.27c.81,1.88,1.28,3.81,1.12,5.84"
+      />
+      <polygon
+        className="cls-1 fill-current"
+        points="68.08 96.38 68.46 96.05 70.07 97.91 71.81 96.17 72.17 96.52 70.05 98.65 68.08 96.38"
+      />
     </svg>
   </div>
 );
 // Built with Vivid (https://vivid.lol) ⚡️
 const BlockTitle = ({ children }: { children: ReactNode }) => {
-  return <h3 className="text-xl font-bold text-strong text-neon-amber">{children}</h3>;
+  return (
+    <h3 className="text-xl font-bold text-strong text-neon-amber">
+      {children}
+    </h3>
+  );
 };
 
 const BlockText = ({ children }: { children: ReactNode }) => {
@@ -86,23 +101,23 @@ const FeatureDemo = (
     alt: string;
     roundedCorners?: boolean;
     scaleDown?: boolean;
-  }
+  },
 ) => {
   const { webmSrc, mp4Src, bumpLeft, center, alt, className, ...divProps } =
     props;
 
   return (
-      <Demo
-        data-aos={`${
-          center ? "zoom-y-out" : bumpLeft ? "fade-right" : "fade-left"
-        }`}
-        data-aos-delay="300"
-        webmSrc={webmSrc}
-        mp4Src={mp4Src}
-        alt={alt}
-        roundedCorners={false}
-        scaleDown={true}
-      />
+    <Demo
+      data-aos={`${
+        center ? "zoom-y-out" : bumpLeft ? "fade-right" : "fade-left"
+      }`}
+      data-aos-delay="300"
+      webmSrc={webmSrc}
+      mp4Src={mp4Src}
+      alt={alt}
+      roundedCorners={false}
+      scaleDown={true}
+    />
   );
 };
 
@@ -129,28 +144,36 @@ export const Features = () => {
         <div className="bg-neon-pink text-white p-24 rounded-lg  mx-auto">
           <ul className="list-none space-y-4">
             <li>
-              - <span className="text-neon-blue font-bold">Days</span> spent brainstorming ✅
+              - <span className="text-neon-blue font-bold">Days</span> spent
+              brainstorming ✅
             </li>
             <li>
-              - <span className="text-neon-blue font-bold">Weeks</span> getting your design just right ✅
+              - <span className="text-neon-blue font-bold">Weeks</span> getting
+              your design just right ✅
             </li>
             <li>
-              - <span className="text-neon-blue font-bold">Months</span> building your product ✅
+              - <span className="text-neon-blue font-bold">Months</span>{" "}
+              building your product ✅
             </li>
             <li>
-              - <span className="text-neon-blue font-bold">Headaches</span> figuring out your brand ✅
+              - <span className="text-neon-blue font-bold">Headaches</span>{" "}
+              figuring out your brand ✅
             </li>
             <li>
-              - <span className="text-neon-blue font-bold">Money</span> spent on advertising ✅
+              - <span className="text-neon-blue font-bold">Money</span> spent on
+              advertising ✅
             </li>
             <li>
-              - <span className="text-neon-blue font-bold">Time</span> sacrificed to build your company ✅
+              - <span className="text-neon-blue font-bold">Time</span>{" "}
+              sacrificed to build your company ✅
             </li>
             <li>
-              - <span className="text-neon-blue font-bold">Investments</span> into growth and sales ✅
+              - <span className="text-neon-blue font-bold">Investments</span>{" "}
+              into growth and sales ✅
             </li>
             <li>
-              - <span className="text-neon-blue font-bold">Customers</span> make purchases ❌
+              - <span className="text-neon-blue font-bold">Customers</span> make
+              purchases ❌
             </li>
           </ul>
           <p className="mt-4 text-center text-md font-bold">
@@ -175,22 +198,27 @@ export const Features = () => {
         </p>
       </FeatureSection>
 
-      
       <FeatureSection grayer center>
         <Text center>
-        <Title size="md">
-          Remind Your Customer Why They 
-          <span className="bg-neon-amber italic px-1 ml-1 mr-1" style={{ lineHeight: '1.2' }}>NEED</span> 
-          You.
-        </Title>
-          <Details>Popup's are your way to talk to your customers. Show your value, show your trusted. Make your product a nescessity</Details>
+          <Title size="md">
+            Remind Your Customer Why They
+            <span
+              className="bg-neon-amber italic px-1 ml-1 mr-1"
+              style={{ lineHeight: "1.2" }}
+            >
+              NEED
+            </span>
+            You.
+          </Title>
+          <Details>
+            Popup's are your way to talk to your customers. Show your value,
+            show your trusted. Make your product a nescessity
+          </Details>
         </Text>
         <div className="mt-12 grid items-start gap-6 lg:grid-cols-3">
           <Block>
             <BlockTitle>Social Proof</BlockTitle>
-            <BlockText>
-              Increase conversion rates by 15% on average
-            </BlockText>
+            <BlockText>Increase conversion rates by 15% on average</BlockText>
             <div className="relative mt-4">
               <img
                 src={"/images/TrustPopup.png"}
@@ -202,9 +230,7 @@ export const Features = () => {
           {/* Block 2 */}
           <Block>
             <BlockTitle>Reviews</BlockTitle>
-            <BlockText>
-              Build trust by displaying reviews 
-            </BlockText>
+            <BlockText>Build trust by displaying reviews</BlockText>
             <div className="relative mt-4">
               <img
                 src={"/images/ReviewPopup.png"}
@@ -216,9 +242,7 @@ export const Features = () => {
           {/* Block 3 */}
           <Block>
             <BlockTitle>New Product Notifs</BlockTitle>
-            <BlockText>
-            Highlight and direct traffic to new products
-            </BlockText>
+            <BlockText>Highlight and direct traffic to new products</BlockText>
             <div className="relative mt-4">
               <img
                 src={"/images/SalePopup.png"}
@@ -231,38 +255,36 @@ export const Features = () => {
       </FeatureSection>
 
       {/* Feature 3 */}
-      
-    <FeatureSection>
-  
-          <Text>
-            <Title size="md">
-              <span className="text-neon-pink">Set it up in seconds</span>
-            </Title>
-            <Details>
-              No coding needed
-              <ul className="list-disc pl-5 mt-2">
-                <li>Choose custom text, images, color and more.</li>
-                <li>Copy and paste our script</li>
-                <li>Your done!</li>
-              </ul>
-            </Details>
 
-          </Text>
+      <FeatureSection>
+        <Text>
+          <Title size="md">
+            <span className="text-neon-pink">Set it up in seconds</span>
+          </Title>
+          <Details>
+            No coding needed
+            <ul className="list-disc pl-5 mt-2">
+              <li>Choose custom text, images, color and more.</li>
+              <li>Copy and paste our script</li>
+              <li>Your done!</li>
+            </ul>
+          </Details>
+        </Text>
 
-      <div className="flex flex-col items-center w-1/2 p-4">
-        <FeatureDemo
-          webmSrc="/videos/terminal.webm"
-          mp4Src="/videos/terminal.mp4"
-          className="green-sky"
-          alt="A video showing Vivid's smart command functionality. By typing smart-center, the user centers all content on screen."
-          roundedCorners={false}
-          scaleDown={true}
-        />
+        <div className="flex flex-col items-center w-1/2 p-4">
+          <FeatureDemo
+            webmSrc="/videos/terminal.webm"
+            mp4Src="/videos/terminal.mp4"
+            className="green-sky"
+            alt="A video showing Vivid's smart command functionality. By typing smart-center, the user centers all content on screen."
+            roundedCorners={false}
+            scaleDown={true}
+          />
           <InlineSVG />
-        <div className="mt-10 text-center text-lg font-bold">
-          Command C + Command V
+          <div className="mt-10 text-center text-lg font-bold">
+            Command C + Command V
+          </div>
         </div>
-      </div>
       </FeatureSection>
     </>
   );

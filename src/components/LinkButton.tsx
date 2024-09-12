@@ -22,7 +22,9 @@ type ButtonProps = DetailedHTMLProps<
  * @param props HTML props along with `button` if the tag should be a button instead of anchor tag
  */
 export const LinkButton = (
-  props: (LinkProps & { button?: undefined }) | (ButtonProps & { button: true })
+  props:
+    | (LinkProps & { button?: undefined })
+    | (ButtonProps & { button: true }),
 ) => {
   const { button, className = "", ...htmlProps } = props;
 
@@ -32,7 +34,7 @@ export const LinkButton = (
       {...(htmlProps as ButtonProps)}
       className={twMerge(
         "text-light hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5",
-        className
+        className,
       )}
     />
   ) : (
@@ -40,7 +42,7 @@ export const LinkButton = (
       {...(htmlProps as LinkProps)}
       className={twMerge(
         "text-light hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5",
-        className
+        className,
       )}
     />
   );

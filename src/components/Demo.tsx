@@ -13,18 +13,25 @@ type DemoProps = DetailedHTMLProps<
 };
 
 export const Demo = (props: DemoProps) => {
-  const { webmSrc, mp4Src, alt, roundedCorners = true, scaleDown = false, ...divProps } = props;
+  const {
+    webmSrc,
+    mp4Src,
+    alt,
+    roundedCorners = true,
+    scaleDown = false,
+    ...divProps
+  } = props;
 
   return (
     <div
       {...divProps}
       className={twMerge(
         "relative col w-full justify-center max-w-2xl overflow-hidden shadow-lg",
-        scaleDown ? "transform scale-75" : "", 
+        scaleDown ? "transform scale-75" : "",
         roundedCorners ? "rounded-2xl" : "", // Apply rounded corners to the parent div
-        divProps.className
+        divProps.className,
       )}
-      style={{ transformOrigin: "center" }} 
+      style={{ transformOrigin: "center" }}
     >
       {webmSrc && mp4Src && (
         <video

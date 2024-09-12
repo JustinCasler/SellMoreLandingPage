@@ -1,6 +1,6 @@
 # Vivid Landing Page Template
 
-This is a ready to use template for any landing page you need, built with React, NextJS, and Tailwind CSS. 
+This is a ready to use template for any landing page you need, built with React, NextJS, and Tailwind CSS.
 
 Modelled after the [Vivid landing page](https://vivid.lol).
 
@@ -9,7 +9,6 @@ Modelled after the [Vivid landing page](https://vivid.lol).
 ## Preview
 
 ![vivid-template-pic](https://user-images.githubusercontent.com/62365335/202585708-82c27ea9-85fc-491f-b991-d4005651b0c2.png)
-
 
 ## Features
 

@@ -69,18 +69,23 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <ul className="mb-4 space-y-2">
         {features.map((feature, index) => {
           const highlight = isPro && feature.includes("Unlimited");
-          const parts = highlight
-            ? feature.split(/(Unlimited)/g)
-            : [feature];
+          const parts = highlight ? feature.split(/(Unlimited)/g) : [feature];
 
           return (
-            <li key={index} className="text-sm text-light flex items-center space-x-2">
+            <li
+              key={index}
+              className="text-sm text-light flex items-center space-x-2"
+            >
               <CheckmarkIcon />
               <span className="relative">
                 {parts.map((part, idx) => (
                   <span
                     key={idx}
-                    className={part === "Unlimited" && highlight ? "bg-neon-pink px-1 rounded" : ""}
+                    className={
+                      part === "Unlimited" && highlight
+                        ? "bg-neon-pink px-1 rounded"
+                        : ""
+                    }
                   >
                     {part}
                   </span>
@@ -105,7 +110,9 @@ export const Pricing = () => {
         <Title size="md">Invest In Your Company</Title>
         <Details>For the price of a dinner</Details>
       </div>
-      <p className="text-lg font-semibold mb-6">$10 off for the first 1000 customers</p>
+      <p className="text-lg font-semibold mb-6">
+        $10 off for the first 1000 customers
+      </p>
       {/* Pricing Plans */}
       <div className="gap-10 md:gap-4 col md:row mx-auto text-center">
         {/* Basic Plan */}
@@ -113,7 +120,12 @@ export const Pricing = () => {
           title="Basic"
           oldPrice="$25"
           price="$18"
-          features={["Unlimited Popups", "Unlimited Websites", "Monitor Traffic", "Tech Support"]}
+          features={[
+            "Unlimited Popups",
+            "Unlimited Websites",
+            "Monitor Traffic",
+            "Tech Support",
+          ]}
           ctaText="Get SellMore"
           redirectUrl={FRONTEND_URL}
         />
@@ -122,7 +134,12 @@ export const Pricing = () => {
           title="Pro"
           oldPrice="$35"
           price="$25"
-          features={["Unlimited Popups", "Unlimited Websites", "Monitor Traffic", "Tech Support"]}
+          features={[
+            "Unlimited Popups",
+            "Unlimited Websites",
+            "Monitor Traffic",
+            "Tech Support",
+          ]}
           ctaText="Get SellMore"
           redirectUrl={FRONTEND_URL}
           isPro={true}

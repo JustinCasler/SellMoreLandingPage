@@ -38,11 +38,11 @@ export const FeatureBlocks = () => {
       {/* Header */}
       <div className="gap-4 col">
         <Title size="md">
-          What is {" "}
-          <GradientText className="purple-teal">SellMore</GradientText>
+          What is <GradientText className="purple-teal">SellMore</GradientText>
         </Title>
         <Details>
-          Implement our product in any use case you want. But here are 3 suggestions:
+          Implement our product in any use case you want. But here are 3
+          suggestions:
         </Details>
       </div>
       {/* Blocks */}
@@ -51,25 +51,19 @@ export const FeatureBlocks = () => {
         <Block>
           <ShuffleIcon />
           <BlockTitle>Social Proof</BlockTitle>
-          <BlockText>
-            Increase conversion rates by 15% on average
-          </BlockText>
+          <BlockText>Increase conversion rates by 15% on average</BlockText>
         </Block>
         {/* Block 2 */}
         <Block>
           <SignalIcon />
           <BlockTitle>Advertising Push Notifs</BlockTitle>
-          <BlockText>
-            Remind users why they need your product
-          </BlockText>
+          <BlockText>Remind users why they need your product</BlockText>
         </Block>
         {/* Block 3 */}
         <Block>
           <TalkingIcon />
           <BlockTitle>New Product Spotlight</BlockTitle>
-          <BlockText>
-           Highlight and direct traffic to new products
-          </BlockText>
+          <BlockText>Highlight and direct traffic to new products</BlockText>
         </Block>
         {/* Block 4 */}
         {/*

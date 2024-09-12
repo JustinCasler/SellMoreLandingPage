@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 // Built with Vivid (https://vivid.lol) ⚡️
 
 export const GradientText = (
-  props: DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>
+  props: DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>,
 ) => {
   return (
     <span

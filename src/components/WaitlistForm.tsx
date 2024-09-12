@@ -10,7 +10,7 @@ import { Input } from "./Input";
 export const WaitlistForm = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
     id: string;
-  }
+  },
 ) => {
   const { id, ...divProps } = props;
 

@@ -7,10 +7,9 @@ export const Section = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
     grayer?: boolean;
     fullWidth?: boolean;
-  }
+  },
 ) => {
   const { grayer, fullWidth, ...divProps } = props;
-
 
   return (
     <section
@@ -24,7 +23,7 @@ export const Section = (
           `relative z-20 py-24 mx-auto col max-w-7xl ${
             fullWidth ? "px-0" : "px-12"
           }`,
-          props.className
+          props.className,
         )}
       />
     </section>

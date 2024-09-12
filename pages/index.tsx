@@ -27,7 +27,7 @@ const Home = ({
         <Hero onScrollToPricing={scrollToPricing} />
         <Features />
         <div ref={pricingRef}>
-        <Pricing />
+          <Pricing />
         </div>
         <FAQSection />
         <Newsletter />

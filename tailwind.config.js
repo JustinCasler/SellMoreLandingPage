@@ -27,8 +27,8 @@ module.exports = {
         pink: "#db93ab",
         red: colors.red[500],
       },
-      'custom-light': '#ececd4',
-      'custom-light-lighter': '#f0f0e9'
+      "custom-light": "#ececd4",
+      "custom-light-lighter": "#f0f0e9",
     },
     extend: {
       fontFamily: {

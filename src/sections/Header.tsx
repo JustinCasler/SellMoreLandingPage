@@ -6,7 +6,7 @@ import { useEffectOnce, useEventListener } from "usehooks-ts";
 import { Button } from "../components/Button";
 import { LinkButton } from "../components/LinkButton";
 import { Moon, Sun } from "../svg/DarkModeIcons";
-import { FRONTEND_URL } from "../constants"
+import { FRONTEND_URL } from "../constants";
 // Built with Vivid (https://vivid.lol) ⚡️
 
 export const Header = ({
@@ -66,7 +66,7 @@ export const Header = ({
           </li>
         ) : null}
         <li>
-          <LinkButton href={ FRONTEND_URL} >Sign In</LinkButton>
+          <LinkButton href={FRONTEND_URL}>Sign In</LinkButton>
         </li>
       </ul>
     </nav>
@@ -76,7 +76,8 @@ export const Header = ({
     // Colors must be set explicitly since opacity and blur don't work together
     <header
       className={`fixed w-full z-30 transition duration-300 ${
-        !top && "bg-custom-light/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-lg"
+        !top &&
+        "bg-custom-light/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-lg"
       }`}
     >
       {/* Header Content */}

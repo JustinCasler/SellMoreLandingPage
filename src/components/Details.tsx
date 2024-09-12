@@ -7,7 +7,7 @@ export const Details = (
   props: DetailedHTMLProps<
     HTMLAttributes<HTMLDivElement>, // Changed to HTMLDivElement
     HTMLDivElement
-  >
+  >,
 ) => {
   return (
     <div // Changed to <div>
