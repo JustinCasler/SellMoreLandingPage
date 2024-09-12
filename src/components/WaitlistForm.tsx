@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { Button } from "./Button";
 import { Input } from "./Input";
 
-// Built with Vivid (https://vivid.lol) ⚡️
+
 
 export const WaitlistForm = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {

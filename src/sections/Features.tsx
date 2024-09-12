@@ -48,7 +48,7 @@ const InlineSVG = () => (
     </svg>
   </div>
 );
-// Built with Vivid (https://vivid.lol) ⚡️
+
 const BlockTitle = ({ children }: { children: ReactNode }) => {
   return (
     <h3 className="text-xl font-bold text-strong text-neon-amber">
@@ -222,7 +222,7 @@ export const Features = () => {
             <div className="relative mt-4">
               <img
                 src={"/images/TrustPopup.png"}
-                alt="Vivid Logo"
+                alt="SellMore Logo"
                 className="w-full h-auto rounded-lg shadow-xl"
               />
             </div>
@@ -234,7 +234,7 @@ export const Features = () => {
             <div className="relative mt-4">
               <img
                 src={"/images/ReviewPopup.png"}
-                alt="Vivid Logo"
+                alt="SellMore Logo"
                 className="w-full h-auto rounded-lg shadow-xl"
               />
             </div>
@@ -246,7 +246,7 @@ export const Features = () => {
             <div className="relative mt-4">
               <img
                 src={"/images/SalePopup.png"}
-                alt="Vivid Logo"
+                alt="SellMore Logo"
                 className="w-full h-auto rounded-lg shadow-xl"
               />
             </div>
@@ -276,7 +276,7 @@ export const Features = () => {
             webmSrc="/videos/terminal.webm"
             mp4Src="/videos/terminal.mp4"
             className="green-sky"
-            alt="A video showing Vivid's smart command functionality. By typing smart-center, the user centers all content on screen."
+            alt="A video showing a termanl being coded in."
             roundedCorners={false}
             scaleDown={true}
           />

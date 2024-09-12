@@ -7,7 +7,7 @@ import { Button } from "../components/Button";
 import { LinkButton } from "../components/LinkButton";
 import { Moon, Sun } from "../svg/DarkModeIcons";
 import { FRONTEND_URL } from "../constants";
-// Built with Vivid (https://vivid.lol) ⚡️
+
 
 export const Header = ({
   isDarkMode,
@@ -40,9 +40,6 @@ export const Header = ({
   const Logo = () => (
     <Link href="/">
       <div className="items-center block gap-1 row">
-        {/*
-        <Image src="/images/logo.png" alt="Vivid logo" height="40" width="40" />
-        */}
         <div className="text-3xl font-bold">
           <span className="text-neon-blue">SellMore</span>
         </div>

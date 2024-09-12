@@ -5,7 +5,7 @@ import {
 } from "react";
 import { twMerge } from "tailwind-merge";
 
-// Built with Vivid (https://vivid.lol) ⚡️
+
 
 type LinkProps = DetailedHTMLProps<
   AnchorHTMLAttributes<HTMLAnchorElement>,

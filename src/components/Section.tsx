@@ -1,7 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-// Built with Vivid (https://vivid.lol) ⚡️
+
 
 export const Section = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
