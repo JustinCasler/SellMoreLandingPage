@@ -5,8 +5,6 @@ import {
 } from "react";
 import { twMerge } from "tailwind-merge";
 
-
-
 type LinkProps = DetailedHTMLProps<
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement

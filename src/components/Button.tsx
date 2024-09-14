@@ -1,8 +1,6 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 import { twMerge } from "tailwind-merge";
 
-
-
 export const Button = (
   props: DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,

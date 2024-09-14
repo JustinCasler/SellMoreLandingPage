@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { LinkButton } from "../components/LinkButton";
 
-
-
 export const Footer = () => {
   return (
     <footer className="bg-extra-strong">

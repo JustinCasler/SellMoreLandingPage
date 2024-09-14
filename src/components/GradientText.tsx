@@ -1,8 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-
-
 export const GradientText = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>,
 ) => {

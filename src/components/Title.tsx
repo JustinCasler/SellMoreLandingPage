@@ -1,8 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-
-
 export const Title = (
   props: DetailedHTMLProps<
     HTMLAttributes<HTMLHeadingElement>,

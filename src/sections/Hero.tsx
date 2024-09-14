@@ -32,7 +32,7 @@ export const Hero: React.FC<{ onScrollToPricing: () => void }> = ({
         data-aos="fade-left"
         webmSrc="/videos/hero.webm"
         mp4Src="/videos/hero.mp4"
-        alt="A video showing Vivid's functionality including command palette, style preview, code pane, and mouse resizing"
+        alt="A video showing SellMore's functionality"
         roundedCorners={true}
       />
     </Section>

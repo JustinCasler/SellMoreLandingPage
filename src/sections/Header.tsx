@@ -8,7 +8,6 @@ import { LinkButton } from "../components/LinkButton";
 import { Moon, Sun } from "../svg/DarkModeIcons";
 import { FRONTEND_URL } from "../constants";
 
-
 export const Header = ({
   isDarkMode,
   toggleDarkMode,
@@ -41,7 +40,15 @@ export const Header = ({
     <Link href="/">
       <div className="items-center block gap-1 row">
         <div className="text-3xl font-bold">
-          <span className="text-neon-blue">SellMore</span>
+          <div className="items-center gap-2 row">
+            <Image
+              src="/images/logo.png"
+              alt="SellMore Logo"
+              height="80"
+              width="80"
+            />
+            <span className="text-neon-blue">SellMore</span>
+          </div>
         </div>
       </div>
     </Link>

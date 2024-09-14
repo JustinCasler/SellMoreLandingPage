@@ -8,7 +8,7 @@ import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import { useDarkMode, useEffectOnce } from "usehooks-ts";
 
-const siteTitle = "SellMore: A no code way to increase brand trust and sales.";
+const siteTitle = "SellMore - A no code way to increase brand trust and sales.";
 const siteDescription =
   "Grow your company or product with SellMore. Sales is difficult and great products go unused, don't let that be you. Use SellMore.";
 

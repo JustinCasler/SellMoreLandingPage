@@ -3,8 +3,6 @@ import { Card } from "../components/Card";
 import { Section } from "../components/Section";
 import { WaitlistForm } from "../components/WaitlistForm";
 
-
-
 const Background = () => (
   <div
     className="absolute bottom-0 right-0 hidden pointer-events-none md:block"

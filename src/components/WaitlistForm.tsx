@@ -5,8 +5,6 @@ import { twMerge } from "tailwind-merge";
 import { Button } from "./Button";
 import { Input } from "./Input";
 
-
-
 export const WaitlistForm = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
     id: string;
@@ -29,7 +27,7 @@ export const WaitlistForm = (
     <p className="mt-3 text-sm text-light">
       {emailSubmitted
         ? "We'll keep you posted!"
-        : "Be the first to experience Vivid."}
+        : "Be the first to experience SellMore."}
     </p>
   );
 
