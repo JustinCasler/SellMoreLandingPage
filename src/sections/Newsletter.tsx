@@ -17,7 +17,9 @@ export const Newsletter = () => {
         <Background />
         <div className="gap-6 text-center md:text-left col md:w-1/2 ">
           <h2 className="text-3xl font-bold text-gray-100">More Questions?</h2>
-          <p className="text-lg text-light">You can reach us here, feel free to ask away!</p>
+          <p className="text-lg text-light">
+            You can reach us here, feel free to ask away!
+          </p>
           <WaitlistForm id="newsletter-waitlist" />
         </div>
       </Card>
