@@ -117,7 +117,7 @@ export const Pricing = () => {
       <div className="gap-10 md:gap-4 col md:row mx-auto text-center">
         {/* Basic Plan */}
         <PricingCard
-          title="Basic"
+          title="Side Project"
           oldPrice="$25"
           price="$18"
           features={[
@@ -131,7 +131,7 @@ export const Pricing = () => {
         />
         {/* Pro Plan */}
         <PricingCard
-          title="Pro"
+          title="Entrapranure"
           oldPrice="$35"
           price="$25"
           features={[

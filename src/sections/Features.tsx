@@ -256,7 +256,7 @@ export const Features = () => {
 
       {/* Feature 3 */}
 
-      <FeatureSection>
+      <FeatureSection right>
         <Text>
           <Title size="md">
             <span className="text-neon-pink">Set it up in seconds</span>
@@ -271,20 +271,13 @@ export const Features = () => {
           </Details>
         </Text>
 
-        <div className="flex flex-col items-center w-1/2 p-4">
-          <FeatureDemo
-            webmSrc="/videos/terminal.webm"
-            mp4Src="/videos/terminal.mp4"
-            className="green-sky"
-            alt="A video showing a termanl being coded in."
-            roundedCorners={false}
-            scaleDown={true}
-          />
-          <InlineSVG />
-          <div className="mt-10 text-center text-lg font-bold">
-            Command C + Command V
-          </div>
-        </div>
+      <Demo
+        data-aos="fade-left"
+        webmSrc="/videos/demo.webm"
+        mp4Src="/videos/demo.mp4"
+        alt="A demo showing SellMore's functionality"
+        roundedCorners={true}
+      />
       </FeatureSection>
     </>
   );
