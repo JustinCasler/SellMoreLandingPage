@@ -47,7 +47,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="icon" href="/icons/favicon.ico" />
         <meta
           property="og:image"
-          content="https://vivid.lol/images/landing-page.png"
+          content="https://sell-more-landing-page.vercel.app/images/landing-page.png"
         />
       </Head>
       <NextSeo

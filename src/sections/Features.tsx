@@ -5,49 +5,7 @@ import { Demo } from "../components/Demo";
 import { Details } from "../components/Details";
 import { Section } from "../components/Section";
 import { Title } from "../components/Title";
-import Image from "next/image";
 
-const InlineSVG = () => (
-  <div className="w-32 h-32">
-    {" "}
-    {/* Adjust width and height as needed */}
-    <svg
-      id="Layer_1"
-      data-name="Layer 1"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 146.7 98.65"
-      className="w-full h-full"
-    >
-      <defs>
-        <style>
-          {`
-            .cls-2 {
-              stroke-dasharray: 0 0 12.07 6.03;
-            }
-            .cls-2, .cls-3 {
-              fill: none;
-              stroke-miterlimit: 10;
-              stroke-width: 1px;
-            }
-          `}
-        </style>
-      </defs>
-      <path className="cls-3 stroke-current" d="m4.01.13s-.96,1.52-1.92,5.66" />
-      <path
-        className="cls-2 stroke-current"
-        d="m1.07,11.74c-.56,4.39-.93,10.25-.79,17.96.15,8.26.94,38.89,29.69,39.32s27.75-38.46,12.8-33.18c-14.95,5.28-14.41,26.31,20.51,18.58,34.92-7.72,67.32-27.66,79.13-5.03s-15.86,32.67-31.33,32.5c-19.55-.22-31.76-26.61-45.49-15.02-9.93,8.38-2.36,15.19,2.01,22.7"
-      />
-      <path
-        className="cls-3 stroke-current"
-        d="m68.98,92.27c.81,1.88,1.28,3.81,1.12,5.84"
-      />
-      <polygon
-        className="cls-1 fill-current"
-        points="68.08 96.38 68.46 96.05 70.07 97.91 71.81 96.17 72.17 96.52 70.05 98.65 68.08 96.38"
-      />
-    </svg>
-  </div>
-);
 
 const BlockTitle = ({ children }: { children: ReactNode }) => {
   return (
@@ -90,36 +48,6 @@ const FeatureSection = ({
     {children}
   </Section>
 );
-
-const FeatureDemo = (
-  props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    webmSrc: string;
-    mp4Src: string;
-    bumpLeft?: boolean;
-    center?: boolean;
-    className: string;
-    alt: string;
-    roundedCorners?: boolean;
-    scaleDown?: boolean;
-  },
-) => {
-  const { webmSrc, mp4Src, bumpLeft, center, alt, className, ...divProps } =
-    props;
-
-  return (
-    <Demo
-      data-aos={`${
-        center ? "zoom-y-out" : bumpLeft ? "fade-right" : "fade-left"
-      }`}
-      data-aos-delay="300"
-      webmSrc={webmSrc}
-      mp4Src={mp4Src}
-      alt={alt}
-      roundedCorners={false}
-      scaleDown={true}
-    />
-  );
-};
 
 const Text = ({
   children,
@@ -271,13 +199,15 @@ export const Features = () => {
           </Details>
         </Text>
 
-      <Demo
-        data-aos="fade-left"
-        webmSrc="/videos/demo.webm"
-        mp4Src="/videos/demo.mp4"
-        alt="A demo showing SellMore's functionality"
-        roundedCorners={true}
-      />
+        <div className="px-4"> {/* Add padding around the Demo */}
+          <Demo
+            data-aos="fade-left"
+            webmSrc="/videos/demo.webm"
+            mp4Src="/videos/demo.mp4"
+            alt="A demo showing SellMore's functionality"
+            roundedCorners={true}
+          />
+        </div>
       </FeatureSection>
     </>
   );

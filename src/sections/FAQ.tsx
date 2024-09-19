@@ -94,7 +94,7 @@ export const FAQSection = () => {
           />
           <FAQItem
             question="What if I don't know how to add a code snippet?"
-            answer="Dont worry! It's super simple, each website builder has tutorials, and if those don't work our support team will walk you through where to paste your snippet."
+            answer="Dont worry! It's super simple, each website builder has tutorials, and if you still need help our support team will walk you through where to paste your snippet."
           />
           <FAQItem
             question="How much controll do I have on the popup design?"

@@ -51,7 +51,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
     <Card
       className={`items-start gap-4 p-8 pt-10 body-lg col text-medium text-left ${
         isPro ? "border-2 border-neon-amber" : ""
-      } w-[24rem] h-96 relative`}
+      } w-full sm:w-[22rem] md:w-[20rem] lg:w-[18rem] h-auto md:h-96 relative mx-auto`}
     >
       {isPro && (
         <div className="absolute top-[-.75rem] left-1/2 transform -translate-x-1/2 bg-neon-amber text-white text-xs font-bold px-4 py-1 rounded-full">
@@ -114,7 +114,7 @@ export const Pricing = () => {
         $10 off for the first 1000 customers
       </p>
       {/* Pricing Plans */}
-      <div className="gap-10 md:gap-4 col md:row mx-auto text-center">
+      <div className="gap-10 md:gap-4 col md:row mx-auto text-center w-full max-w-3xl">
         {/* Basic Plan */}
         <PricingCard
           title="Side Project"
