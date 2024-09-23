@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Head from "next/head";
 import { Features } from "../src/sections/Features";
 import { FeatureBlocks } from "../src/sections/FeatureBlocks";
 import { Footer } from "../src/sections/Footer";
@@ -22,6 +23,21 @@ const Home = ({
   };
   return (
     <div className="overflow-hidden col text-strong">
+           <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w, r) { 
+                w[r] = w[r] || function() { 
+                  (w[r].q = w[r].q || []).push(arguments); 
+                }; 
+              })(window, 'customConfig'); 
+              customConfig({ siteId: '66f16a1ef620f7de79a64593' });
+            `,
+          }}
+        />
+        <script src="https://app.sellmore.live/scripts/script.js" async></script>
+      </Head>
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <main>
         <Hero onScrollToPricing={scrollToPricing} />
