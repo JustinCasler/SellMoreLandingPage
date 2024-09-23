@@ -140,7 +140,7 @@ export const Features = () => {
           </Title>
           <Details>
             Popup's are your way to talk to your customers. Show your value,
-            show your trusted. Make your product a nescessity
+            show your trusted. Make your product a necessity.
           </Details>
         </Text>
         <div className="mt-12 grid items-start gap-6 lg:grid-cols-3">
