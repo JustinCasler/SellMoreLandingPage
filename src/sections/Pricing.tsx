@@ -121,8 +121,8 @@ export const Pricing = () => {
           oldPrice="$25"
           price="$18"
           features={[
-            "Unlimited Popups",
-            "Unlimited Websites",
+            "One Popup",
+            "One Website",
             "Monitor Traffic",
             "Tech Support",
           ]}
