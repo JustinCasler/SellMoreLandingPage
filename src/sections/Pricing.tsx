@@ -139,6 +139,7 @@ export const Pricing = () => {
             "Unlimited Websites",
             "Monitor Traffic",
             "Tech Support",
+            "White label"
           ]}
           ctaText="Get SellMore"
           redirectUrl={FRONTEND_URL}
