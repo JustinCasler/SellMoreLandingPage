@@ -131,7 +131,7 @@ export const Pricing = () => {
         />
         {/* Pro Plan */}
         <PricingCard
-          title="Entrapranure"
+          title="Entrepreneur"
           oldPrice="$35"
           price="$25"
           features={[
